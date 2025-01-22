@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <h1>Form Validation</h1>
+
+    <label for="username">Username</label>
+    <input id="username" class="js-username-input" type="text" placeholder="Enter your username">
+    <small>Username must be 6-16 characters long and can include letters, numbers, underscores, or hyphens. No spaces.</small>
+
+    <label for="email">Email</label>
+    <input id="email" class="js-email-input" type="text" placeholder="Enter your email">
+    <small>Please enter a valid email format.</small>
+
+    <label for="password">Password</label>
+    <input id="password" class="js-password-input" type="password" placeholder="Enter your password">
+    <small>Password must be at least 8 characters long, include one uppercase letter, one lowercase letter, one number, and one special character (e.g., !, @, #). No spaces.</small>
+    
+
+    <button class="js-login-button">Log In</button>
+
+    <p class="js-login-result login-result"></p>
+
+  </div>
+
+  <script src="scripts.js"></script>
+  
+</body>
+</html>
