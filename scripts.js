@@ -76,7 +76,7 @@ function logInCalculate() {
 
 logInCalculate();
 
-// TODO: Add specific error messages next to each input field for username, email, and password validation.
+
 
 
 
