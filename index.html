@@ -10,18 +10,21 @@
 
   <div class="wrapper">
 
-    <h1>Form Validation</h1>
+    <h1>Account Login</h1>
 
     <label for="username">Username</label>
     <input id="username" class="js-username-input" type="text" placeholder="Enter your username">
+    <span class="js-username-error error"></span>
     <small>Username must be 6-16 characters long and can include letters, numbers, underscores, or hyphens. No spaces.</small>
 
     <label for="email">Email</label>
     <input id="email" class="js-email-input" type="text" placeholder="Enter your email">
+    <span class="js-email-error error"></span>
     <small>Please enter a valid email format.</small>
 
     <label for="password">Password</label>
     <input id="password" class="js-password-input" type="password" placeholder="Enter your password">
+    <span class="js-password-error error"></span>
     <small>Password must be at least 8 characters long, include one uppercase letter, one lowercase letter, one number, and one special character (e.g., !, @, #). No spaces.</small>
     
 

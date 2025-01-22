@@ -40,7 +40,31 @@ function logInCalculate() {
     const email = emailInput.value.trim();
     const password = passwordInput.value.trim();
 
-    if (isValidUsername(username) && isValidEmail(email) && isValidPassword(password)) {
+    document.querySelector('.js-username-error').style.display = 'none';
+    document.querySelector('.js-email-error').style.display = 'none';
+    document.querySelector('.js-password-error').style.display = 'none'
+
+    let isValid = true;
+
+    if (!isValidUsername(username)) {
+      document.querySelector('.js-username-error').textContent = 'Please enter a valid username';
+      document.querySelector('.js-username-error').style.display = 'inline'
+      isValid = false;
+    }
+
+    if (!isValidEmail(email)) {
+      document.querySelector('.js-email-error').textContent = 'Please enter a valid email';
+      document.querySelector('.js-email-error').style.display = 'inline'
+      isValid = false;
+    }
+
+    if (!isValidPassword(password)) {
+      document.querySelector('.js-password-error').textContent = 'Please enter a valid password';
+      document.querySelector('.js-password-error').style.display = 'inline'
+      isValid = false;
+    }
+
+    if (isValid) {
       logInResult.textContent = "You are successfully logged in";
       logInResult.style.color = 'green'
     } else {
@@ -51,4 +75,8 @@ function logInCalculate() {
 )}
 
 logInCalculate();
+
+// TODO: Add specific error messages next to each input field for username, email, and password validation.
+
+
 

@@ -50,3 +50,8 @@ button:hover {
 .login-result {
   text-align: center;
 }
+
+.error {
+  color: red;
+
+}
