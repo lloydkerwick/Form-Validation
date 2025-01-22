@@ -48,19 +48,20 @@ function logInCalculate() {
 
     if (!isValidUsername(username)) {
       document.querySelector('.js-username-error').textContent = 'Please enter a valid username';
-      document.querySelector('.js-username-error').style.display = 'inline'
+      document.querySelector('.js-username-error').style.display = 'block'
+      
       isValid = false;
     }
 
     if (!isValidEmail(email)) {
       document.querySelector('.js-email-error').textContent = 'Please enter a valid email';
-      document.querySelector('.js-email-error').style.display = 'inline'
+      document.querySelector('.js-email-error').style.display = 'block'
       isValid = false;
     }
 
     if (!isValidPassword(password)) {
       document.querySelector('.js-password-error').textContent = 'Please enter a valid password';
-      document.querySelector('.js-password-error').style.display = 'inline'
+      document.querySelector('.js-password-error').style.display = 'block'
       isValid = false;
     }
 
